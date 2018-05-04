@@ -2,7 +2,7 @@
 #define	Jwrite(desc, dst, src)	((desc).type->write ? (desc).type->write((desc).ctx, (desc).size, (char*)(src) + (desc).off, dst) : -1)
 #define	Jfree(desc, mem)	if ((desc).type->free) (desc).type->free((desc).ctx, (desc).size, (char*)(mem) + (desc).off)
 
-typedef	int	Jrw(const void *ctx, ulong size, void *mem, Biobufhdr *bf);
+typedef	int	Jrw(const void *ctx, ulong size, void *mem, FILE *stream);
 typedef	void	Jfree(const void *ctx, ulong size, void *mem);
 typedef	struct Jtype	Jtype;
 typedef	struct Jdesc	Jdesc;
