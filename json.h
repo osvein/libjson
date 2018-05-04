@@ -26,10 +26,10 @@ struct	Jctxpair {
 	Jdesc	desc;
 };
 
-extern const Jtype	Jtstruct;
-extern const Jtype	Jtarray;
-extern const Jtype	Jtmarray;
-extern const Jtype	Jtlist;
-extern const Jtype	Jtdouble;
-extern const Jtype	Jtstr;
-extern const Jtype	Jtmstr;
+extern const Jtype	jstruct;
+extern const Jtype	jarray;
+extern const Jtype	jmarray;
+extern const Jtype	jlist;
+extern const Jtype	jdouble;
+extern const Jtype	jstring;
+extern const Jtype	jmstring;
